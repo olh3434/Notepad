@@ -1,14 +1,17 @@
-package com.olh.notepad.data
+package com.olh.notepad.repository
 
-import kotlinx.coroutines.flow.Flow
+import com.olh.notepad.model.NoteDao
+import com.olh.notepad.model.NoteEntity
 
-class NoteRepository(private val dao: NoteDao) {
+class NoteRepository(private val noteDao: NoteDao) {
 
-    val allNotes: Flow<List<NoteEntity>> = dao.getAllNotes()
+    val allNotes = noteDao.getAllNotes()
 
-    suspend fun insert(note: NoteEntity) = dao.insert(note)
+    suspend fun insert(note: NoteEntity) {
+        noteDao.insertNote(note)
+    }
 
-    suspend fun update(note: NoteEntity) = dao.update(note)
-
-    suspend fun delete(note: NoteEntity) = dao.delete(note)
+    suspend fun delete(note: NoteEntity) {
+        noteDao.deleteNote(note)
+    }
 }

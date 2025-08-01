@@ -5,12 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.olh.notepad.TodoEntity
 
-@Database(entities = [TodoEntity::class], version = 1, exportSchema = false)
-@TypeConverters(TodoTypeConverter::class)
+@Database(entities = [TodoEntity::class], version = 1)
+@TypeConverters(TodoItemConverter::class)
 abstract class TodoDatabase : RoomDatabase() {
-
     abstract fun todoDao(): TodoDao
 
     companion object {

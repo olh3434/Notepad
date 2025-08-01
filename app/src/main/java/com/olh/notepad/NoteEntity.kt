@@ -1,4 +1,4 @@
-package com.olh.notepad.data
+package com.olh.notepad.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
