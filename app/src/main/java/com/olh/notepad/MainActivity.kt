@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        if (requestCode == 200 && resultCode == Activity.RESULT_OK) {
+        if (requestCode == 100 && resultCode == Activity.RESULT_OK) {
             val updatedTitle = data?.getStringExtra("updated_title") ?: ""
             val updatedText = data?.getStringExtra("updated_text") ?: ""
             val updatedCategory = data?.getStringExtra("updated_category") ?: "Genel"
