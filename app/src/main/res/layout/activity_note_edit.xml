@@ -1,0 +1,46 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTitleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Başlık"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editContentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:hint="Notunuzu düzenleyin..."
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategoryEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnUpdateNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Güncelle"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

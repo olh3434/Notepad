@@ -1,0 +1,6 @@
+<resources>
+    <color name="cardBackground">#FAFAFA</color>
+    <color name="darkText">#222222</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="softBackground">#EEEEEE</color>
+</resources>
