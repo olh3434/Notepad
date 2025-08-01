@@ -7,7 +7,6 @@ import com.olh.notepad.repository.NoteRepository
 import kotlinx.coroutines.launch
 
 class NoteViewModel(private val repository: NoteRepository) : ViewModel() {
-
     val allNotes = repository.allNotes
 
     fun insert(note: NoteEntity) = viewModelScope.launch {
